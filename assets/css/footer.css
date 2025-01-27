@@ -1,0 +1,28 @@
+
+footer {
+
+    
+    color: white;
+    padding: 30px 30px;
+}
+.social-links p {
+    font-weight:500;
+    font-size: 18px;
+    display: inline;
+    font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+    margin-right: 15px;
+}
+.right-section {
+    font-weight: bold !important;
+    color:#E04b18;
+    font-weight: 600;
+    font-size: 85px;
+    text-align: right;
+    font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+}
+.et{
+    color: #ffffffbf;
+}
+a{
+    text-decoration: none;
+}

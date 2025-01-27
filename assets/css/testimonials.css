@@ -1,0 +1,151 @@
+body{
+    background-color: black;
+      scroll-behavior: smooth;
+}
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 5px; /* Scrollbar width */
+}
+
+
+::-webkit-scrollbar-thumb {
+    background:#E04b18; /* Scrollbar color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+a{
+    color: white;
+}
+
+.name-section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.name-heading {
+
+    
+    font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+    margin-top: 40px !important;
+    font-size: 120px;
+    letter-spacing: -5px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 0.9;
+    margin: 0 auto;
+}
+.availability-heading {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #E04b18;  /* Highlighting with a different color */
+    margin-top: 20px;
+    letter-spacing: -0.5px;  /* Slight letter spacing adjustment */
+}
+
+@media (max-width: 768px) {
+    
+    .portfolio-nav a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    .name-heading {
+        margin-top: 0px !important;
+        letter-spacing: -2px;
+        line-height: 1;
+        font-size: 58px;
+     }
+     .availability-heading {
+        font-size: 24px;
+    }
+
+}
+@media (max-width: 576px) {
+    .portfolio-nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+.testimonial-card {
+  
+  font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+    width: 710px;
+    height: 450px; /* Increased height for small screens */
+    background-color: #232323;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .testimonial-card img {
+    width: 100%;
+    height: 60%;  /* Increased height for better display */
+    object-fit: cover;
+  }
+  
+  .testimonial-content {
+    text-align: start;
+    padding: 20px;
+    color: white;
+    width: 100%;
+  }
+  
+  .testimonial-content h5 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .testimonial-content p {
+    font-size: 1rem;
+    color: #ffffffbf;
+  }
+  
+  /* Larger screens: Image on left, content on right */
+  @media (min-width: 768px) {
+    .testimonial-card {
+        width: 740px;
+      flex-direction: row;
+      height: 360px; /* Default height for larger screens */
+    }
+  
+    .testimonial-card img {
+      width: 50%;
+      height: 100%;
+    }
+  
+    .testimonial-content {
+      width: 50%;
+      padding: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) { 
+    .am{
+        text-align: center !important;
+        font-size: 60px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-nav .col-sm-4:nth-child(1),
+    .portfolio-nav .col-sm-4:nth-child(2),
+    .portfolio-nav .col-sm-4:nth-child(3) {
+        width: 33.33%; /* First row 3 items */
+    }
+
+    .portfolio-nav .col-sm-6:nth-child(4),
+    .portfolio-nav .col-sm-6:nth-child(5) {
+        width: 40%; /* Second row 2 items */
+    }
+
+    .portfolio-nav .col-sm-12:nth-child(6) {
+        width: 35%; /* Third row 1 item */
+    }
+}
+

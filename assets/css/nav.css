@@ -1,0 +1,114 @@
+
+
+.portfolio-nav {
+    
+    font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+    margin-top: 40px;
+    text-align: center;
+}
+.portfolio-nav .nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0px;
+    margin: 0 6px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Respelling hover effect (letter spacing animation) */
+
+.portfolio-nav .nav-link.active {
+    width: 107px;
+    background-color:#E04b18;
+    padding: 4px 0px;
+    border-radius: 50px;
+    color: #fff;
+}
+.Btn {
+    width: 45px;
+    height: 45px;
+    background:#E04b18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    border: none;
+    bottom: 20px; /* Keep the button at the bottom */
+    left: 20px; /* Add margin from the left */
+    opacity: 0; /* Start with opacity 0 */
+    animation: fade-up 1s ease-out forwards; /* Apply fade-up animation */
+  }
+  
+  .arrow path {
+    fill: white;
+  }
+  
+  .text {
+    font-size: 0.7em;
+    width: 100px;
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -18px;
+    opacity: 0;
+    transition-duration: .7s;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .7s;
+  }
+  
+  .Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Start from 50px below */
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at normal position */
+    }
+  }
+  
+  @media (max-width: 768px) { 
+    /* Adjusting the arrow position on small screens */
+    .arrow {
+      width: 22px; /* Adjust width of the arrow to fit the smaller button */
+      height: 22px; /* Adjust height accordingly */
+    }
+  
+    /* Make sure the button background stays centered */
+    .Btn {
+      width: 52px; /* Optionally increase button size on small screens */
+      height: 52px;
+    }
+  
+    /* Center the arrow properly in small button */
+    .arrow path {
+      transform: translateY(0) !important; /* Ensure proper vertical centering */
+    }
+  }
+  
